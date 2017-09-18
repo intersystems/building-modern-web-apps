@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.6/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.6/angular-animate.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic&amp;subset=latin" rel="stylesheet" type="text/css" data-mincss="ignore">
+    <link rel="stylesheet" href="style.css" />
+    <title>To-do List Application</title>
+</head>
+<body ng-app="todolist" ng-cloak>
+<div class="container">
+    <div class="row col-sm-12 col-md-8 col-md-offset-2">
+        <div class="page-header">
+            <h1><b>To-do List Application</b><br/><small><i>Global Summit 2017</i></small></h1>
+        </div>
+        
+        <main ui-view></main>
+    </div>
+</div>
+
+<script src="js/app.module.js"></script>
+<script src="js/app.routes.js"></script>
+<script src="js/app.filters.js"></script>
+<script src="js/service.api.js"></script>
+<script src="js/ctrl.table.js"></script>
+<script src="js/ctrl.new.js"></script>
+<script src="js/ctrl.edit.js"></script>
+
+</body>
+</html>

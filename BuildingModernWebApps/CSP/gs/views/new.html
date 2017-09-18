@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col-xs-12">
+        <h5>New Task</h5>
+        <div class="form-group">
+            <input type="text" class="form-control" ng-model="form.text" placeholder="Task text" />
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="form-group">
+            <div class="checkbox">
+                <label><input type="checkbox" value="" ng-model="form.important" ng-false-value="0" ng-true-value="1">Important</label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-6">
+        <button class="btn btn-primary btn-block" ng-click="cancel()">Cancel</button>
+    </div>
+    <div class="col-xs-6">
+        <button class="btn btn-primary btn-block" ng-click="save()">Save</button>
+    </div>
+</div>
